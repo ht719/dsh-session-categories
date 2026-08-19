@@ -30,9 +30,16 @@ describe('single-package publishing contract', () => {
     })
     expect(manifest.exports?.['./client']).toBeDefined()
     expect(manifest.files).toEqual(expect.arrayContaining(['lib/client.js', 'cordis.patch.yml']))
+    expect(manifest.files).toContain('lib/spec.js')
     expect(patch).toEqual([{
       insert: [{ id: 'session-categories', name: '@deepseek-ai/dsh-session-categories' }],
     }])
+  })
+
+  it('ships the runtime spec entry imported by the Host bundle', async () => {
+    const entry = await readFile(resolve(root, 'lib/index.js'), 'utf8')
+    expect(entry).toContain("from \"./spec.js\"")
+    await expect(import(resolve(root, 'lib/spec.js'))).resolves.toHaveProperty('sessionCategoriesDomainSpec')
   })
 
   it('does not publish dependencies on development-only category packages', async () => {

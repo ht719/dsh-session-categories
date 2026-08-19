@@ -39,6 +39,7 @@
   },
   "files": [
     "lib/index.js",
+    "lib/spec.js",
     "lib/invariant.js",
     "lib/types/**/*.js",
     "lib/types/**/*.d.ts",
