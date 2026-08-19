@@ -1,0 +1,4 @@
+# Install the dual-face Host and Web Client plugin as one Cordis row.
+- insert:
+    - id: session-categories
+      name: '@deepseek-ai/dsh-session-categories'
