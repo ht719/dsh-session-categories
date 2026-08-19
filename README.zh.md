@@ -1,4 +1,4 @@
-# `@deepseek-ai/dsh-session-categories`
+# dsh 会话分类插件
 
 [English](README.md) | 中文
 

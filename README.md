@@ -1,4 +1,4 @@
-# `@deepseek-ai/dsh-session-categories`
+# dsh-session-categories
 
 English | [中文](README.zh.md)
 
