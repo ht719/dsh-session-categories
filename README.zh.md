@@ -31,3 +31,7 @@ dsh --profile web
 ```
 
 仓库已包含生成后的运行时文件，不需要额外构建。
+
+## 源码布局
+
+仓库根目录是可安装的预构建包。宿主、浏览器端和 bundle 源码分别保留在 `packages/workspace/session-categories/`、`packages/client/ui-session-categories/` 与 `packages/bundle/session-categories/`。

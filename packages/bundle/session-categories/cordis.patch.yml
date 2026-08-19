@@ -1,0 +1,9 @@
+# Optional Web overlay for Workspace-scoped Session categories.
+# The Host row precedes the browser row so the Client can mount its generated
+# Remote after the host contribution is available. No core row is replaced.
+- insert:
+    - id: session-categories
+      name: '@deepseek-ai/dsh-session-categories'
+
+    - id: ui-session-categories
+      name: '@deepseek-ai/dsh-client-ui-session-categories'

@@ -28,6 +28,10 @@ dsh --profile web
 
 The repository includes the generated runtime files, so a separate build step is not required.
 
+## Source layout
+
+The repository root is the installable prebuilt package. Source packages are retained under `packages/workspace/session-categories/`, `packages/client/ui-session-categories/`, and `packages/bundle/session-categories/`.
+
 Deleting a category recursively archives its sessions; it never deletes their durable logs. Archive operations are retried with the same operation id and recover after a restart. Mutations reject stale revisions, cross-Workspace session ids, descendant moves, and assignments to unknown categories.
 
 The plugin is composed as an ordinary Cordis row. It does not require changes to `ui-workspace`, `ui-slots`, `api-remotes`, or other core dsh packages.
