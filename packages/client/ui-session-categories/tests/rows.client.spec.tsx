@@ -290,6 +290,17 @@ describe('workspace browser rows', () => {
     expect(screen.queryByRole('menu')).toBeNull()
   })
 
+  it('shows the plus icon for creating a workspace category', () => {
+    const group: GroupNode = {
+      key: 'project', workspaceId: wid('project'), cwd: '/projects/project', createdAt: 0, label: 'Project',
+      sessionCount: 0, expanded: false, containsCurrent: false, sessions: [],
+    }
+    render(<ProjectRowItem group={group} onToggle={vi.fn()} onCreate={vi.fn()}
+      actions={{ createCategory: vi.fn(), rename: vi.fn(), delete: vi.fn() }} t={t} />)
+    fireEvent.click(screen.getByRole('button', { name: /工作区.*操作/ }))
+    expect(screen.getByRole('menuitem', { name: '新建分类' }).querySelector('svg')).toBeTruthy()
+  })
+
   it('workspace hover card shows its details and copies the full directory path', async () => {
     vi.useFakeTimers()
     const writeText = vi.fn(async () => {})

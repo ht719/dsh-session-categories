@@ -161,7 +161,7 @@ export function ProjectRowItem({ group, onToggle, onCreate, actions, collapsedIn
   const active = group.expanded && group.containsCurrent
   const [menuOpen, setMenuOpen] = useState(false)
   const workspaceMenuItems = [
-    ...(actions?.createCategory === undefined ? [] : [{ id: 'create-category', label: t('category.create') }]),
+    ...(actions?.createCategory === undefined ? [] : [{ id: 'create-category', label: t('category.create'), icon: <IconPlusOutline16 /> }]),
     { id: 'rename', label: t('rename'), icon: <IconEditOutline16 /> },
     { id: 'delete', label: t('delete.workspace'), icon: <IconTrashOutline16 />, danger: true },
   ]
