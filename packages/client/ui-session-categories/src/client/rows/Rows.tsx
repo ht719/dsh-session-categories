@@ -294,11 +294,12 @@ export function CategoryRowItem({
     })
   }
   const moveItems = [
-    { id: 'move-root', label: t('category.root'), disabled: busy },
+    { id: 'move-root', label: t('category.root'), icon: <IconFolderClose16 />, disabled: busy },
     ...categoryOptions.filter(category => !invalidMoveTargetIds.includes(category.id))
       .map(category => ({
         id: `move:${category.id}`,
         disabled: busy,
+        icon: <IconFolderClose16 />,
         label: <span style={{ paddingInlineStart: category.depth * 12 }}>{category.title}</span>,
       })),
   ]
@@ -593,11 +594,12 @@ export function SessionNodeItem({ node, currentId, now, onOpen, onRename, onFork
     // 20-native glyph in the menu's 16px icon slot (Menu.module.css .itemIcon).
     { id: 'archive', label: t('menu.archiveSession'), icon: <IconArchiveOutline20 size={16} /> },
     ...(categoryMove === undefined ? [] : [{
-      id: 'move-category', label: t('category.move'), submenu: [
-        { id: 'category:null', label: t('category.unclassified'), disabled: categoryBusy },
+      id: 'move-category', label: t('category.move'), icon: <IconFolderOpenOutline16 />, submenu: [
+        { id: 'category:null', label: t('category.unclassified'), icon: <IconFolderClose16 />, disabled: categoryBusy },
         ...categoryMove.categories.map(category => ({
           id: `category:${category.id}`,
           disabled: categoryBusy,
+          icon: <IconFolderClose16 />,
           label: <span style={{ paddingInlineStart: category.depth * 12 }}>{category.title}</span>,
         })),
       ],
