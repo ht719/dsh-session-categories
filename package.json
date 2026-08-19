@@ -35,7 +35,6 @@
     },
     "./client": "./lib/client.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
-    "./src/*": "./src/*",
     "./package.json": "./package.json"
   },
   "files": [
@@ -88,21 +87,5 @@
   "dependencies": {
     "zod": "^4.4.3"
   },
-  "devDependencies": {
-    "@deepseek-ai/cordis": "workspace:^",
-    "@deepseek-ai/dsh-brand": "workspace:^",
-    "@deepseek-ai/dsh-api-gateway": "workspace:^",
-    "@deepseek-ai/dsh-client-locale": "workspace:^",
-    "@deepseek-ai/dsh-client-runtime": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-conversation": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-primitives": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-sidebar": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-slots": "workspace:^",
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/dsh-session": "workspace:^",
-    "@deepseek-ai/dsh-storage-domain": "workspace:^",
-    "@deepseek-ai/dsh-typert-protocol": "workspace:^",
-    "@deepseek-ai/dsh-workspace": "workspace:^",
-    "js-yaml": "^4.1.0"
-  }
+  "devDependencies": {}
 }
