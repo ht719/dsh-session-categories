@@ -13,6 +13,20 @@ dsh --profile web
 
 The package contains the Host entry, Web client bundle, and Cordis profile patch. No separate Client or Bundle package is required.
 
+## What it looks like
+
+The sidebar groups sessions inside clear, collapsible category containers. The screenshot below is a redacted UI illustration based on the plugin's current layout; session titles and workspace names are anonymized.
+
+![Session categories in the dsh sidebar](docs/session-categories-overview.jpg)
+
+Within a Workspace, you can:
+
+- create a session directly inside a category;
+- expand or collapse categories without losing their hierarchy;
+- drag a session into another category;
+- create, rename, or delete categories from the category actions menu;
+- move a session through the folder-icon **Move to category** action.
+
 Expanded categories use light nested containers with a fixed inset and a subtle tonal step at each depth. Sessions receive one additional inset beyond their category, and drag targets highlight without changing row dimensions.
 
 Collapsed Workspace rows show a hierarchy icon indicating that categories and sessions are present. The category-row plus starts a session in that category; child-category creation is in the category actions menu, and the move action has a folder icon.
