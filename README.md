@@ -4,20 +4,13 @@ English | [中文](README.zh.md)
 
 This Host plugin stores a revisioned, Workspace-scoped category tree and the single category assignment for each session. It persists through the Workspace storage provider, exposes CRUD and archive operations through its generated Typert Remote, and prunes assignments for sessions no longer known to the Workspace.
 
-Install the single Web plugin package into an unmodified dsh installation:
-
-```sh
-dsh plugin --profile web add @deepseek-ai/dsh-session-categories
-dsh --profile web
-```
-
 The package contains the Host entry, Web client bundle, and Cordis profile patch. No separate Client or Bundle package is required.
 
 ## What it looks like
 
 The sidebar groups sessions inside clear, collapsible category containers. The screenshot below is a redacted UI illustration based on the plugin's current layout; session titles and workspace names are anonymized.
 
-![Session categories in the dsh sidebar](docs/session-categories-overview.png)
+<img src="docs/session-categories-overview.png" alt="Session categories in the dsh sidebar" width="500">
 
 Within a Workspace, you can:
 

@@ -4,20 +4,13 @@
 
 此 Host 插件保存按 Workspace 隔离、带 revision 的分类树，以及每个对话唯一的分类归属。它通过 Workspace storage provider 持久化，通过生成的 Typert Remote 提供 CRUD 和归档操作，并清理 Workspace 中已不存在对话的旧归属。
 
-将单个 Web 插件包安装到未修改的 dsh：
-
-```sh
-dsh plugin --profile web add @deepseek-ai/dsh-session-categories
-dsh --profile web
-```
-
 该包包含 Host 入口、Web Client bundle 和 Cordis profile patch，不需要额外安装 Client 或 Bundle 包。
 
 ## 界面预览
 
 侧边栏会将会话放入清晰的、可展开和折叠的分类容器中。下图是基于插件当前布局制作的脱敏界面示意图，工作区名称和会话标题均已匿名化。
 
-![dsh 侧边栏中的会话分类](docs/session-categories-overview.png)
+<img src="docs/session-categories-overview.png" alt="dsh 侧边栏中的会话分类" width="500">
 
 在 Workspace 中可以：
 
