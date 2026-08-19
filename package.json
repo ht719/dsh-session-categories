@@ -1,7 +1,7 @@
 {
-  "name": "@deepseek-ai/dsh-session-categories",
+  "name": "dsh-session-categories",
   "description": "Durable Workspace-scoped Session categories for the DeepSeek Harness",
-  "version": "0.1.0-rc.5",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
@@ -9,6 +9,8 @@
     "type": "git",
     "url": "git+https://github.com/ht719/dsh-session-categories.git"
   },
+  "homepage": "https://github.com/ht719/dsh-session-categories#readme",
+  "keywords": ["deepseek", "harness", "dsh", "plugin", "session", "category", "workspace"],
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",

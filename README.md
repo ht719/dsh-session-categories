@@ -28,18 +28,24 @@ Expanded categories use nested containers with a fixed inset at each depth. Sess
 The `dsh` command must be available in your shell. Install the prebuilt package directly into an unmodified dsh Web profile:
 
 ```sh
-dsh plugin --profile web add github:ht719/dsh-session-categories
+dsh plugin --profile web add dsh-session-categories
 dsh --profile web
 ```
 
 If you are running dsh from a source checkout, use its package launcher instead:
 
 ```sh
-pnpm dsh plugin --profile web add github:ht719/dsh-session-categories
+pnpm dsh plugin --profile web add dsh-session-categories
 pnpm dsh --profile web
 ```
 
 The repository includes generated runtime files, so a separate plugin build is not required.
+
+For the unreleased GitHub version, install directly from the repository:
+
+```sh
+dsh plugin --profile web add github:ht719/dsh-session-categories
+```
 
 ## Behavior and data
 

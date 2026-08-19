@@ -28,18 +28,24 @@
 请先确保当前 shell 中可以使用 `dsh` 命令，然后将预构建插件直接安装到未修改的 dsh Web profile：
 
 ```sh
-dsh plugin --profile web add github:ht719/dsh-session-categories
+dsh plugin --profile web add dsh-session-categories
 dsh --profile web
 ```
 
 如果你是在 dsh 源码仓库中运行，则使用源码仓库提供的 package launcher：
 
 ```sh
-pnpm dsh plugin --profile web add github:ht719/dsh-session-categories
+pnpm dsh plugin --profile web add dsh-session-categories
 pnpm dsh --profile web
 ```
 
 仓库已包含生成后的运行时文件，不需要额外构建插件。
+
+如果需要安装尚未发布的 GitHub 版本，可以直接从仓库安装：
+
+```sh
+dsh plugin --profile web add github:ht719/dsh-session-categories
+```
 
 ## 行为与数据
 
