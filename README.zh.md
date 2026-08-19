@@ -17,7 +17,7 @@ dsh --profile web
 
 侧边栏会将会话放入清晰的、可展开和折叠的分类容器中。下图是基于插件当前布局制作的脱敏界面示意图，工作区名称和会话标题均已匿名化。
 
-![dsh 侧边栏中的会话分类](docs/session-categories-overview.jpg)
+![dsh 侧边栏中的会话分类](docs/session-categories-overview.png)
 
 在 Workspace 中可以：
 

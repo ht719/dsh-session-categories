@@ -17,7 +17,7 @@ The package contains the Host entry, Web client bundle, and Cordis profile patch
 
 The sidebar groups sessions inside clear, collapsible category containers. The screenshot below is a redacted UI illustration based on the plugin's current layout; session titles and workspace names are anonymized.
 
-![Session categories in the dsh sidebar](docs/session-categories-overview.jpg)
+![Session categories in the dsh sidebar](docs/session-categories-overview.png)
 
 Within a Workspace, you can:
 
